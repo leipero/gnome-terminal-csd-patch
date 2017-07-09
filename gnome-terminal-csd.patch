@@ -1,0 +1,17 @@
+diff --git a/src/terminal-window.ui b/src/terminal-window.ui
+index b0f63fd..f3566dd 100644
+--- a/src/terminal-window.ui
++++ b/src/terminal-window.ui
+@@ -3,6 +3,12 @@
+   <!-- interface-requires gtk+ 3.10 -->
+   <template class="TerminalWindow" parent="GtkApplicationWindow">
+     <property name="can_focus">False</property>
++     <child type="titlebar">
++      <object class="GtkHeaderBar" id="header">
++       <property name="visible">True</property>
++       <property name="show-close-button">True</property>
++      </object>
++     </child>
+     <child>
+       <object class="GtkBox" id="main_vbox">
+         <property name="visible">True</property>
